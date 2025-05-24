@@ -78,11 +78,11 @@ VALUES
 
 INSERT INTO producto (nombre, descripcion, precio, imagen_url, municipio, cantidad_disponible, vendedor_id, categoria_id)
 VALUES 
-('Manzanas', 'Manzanas rojas dulces', 3000.00, 'https://example.com/manzanas.jpg', 'Bogotá', 50, '1001', 1),
-('Lechuga', 'Lechuga fresca y orgánica', 1500.00, 'https://example.com/lechuga.jpg', 'Medellín', 100, '1002', 2),
-('Queso campesino', 'Queso fresco artesanal', 12000.00, 'https://example.com/queso.jpg', 'Cali', 20, '1003', 3),
-('Arroz', 'Arroz blanco premium', 2500.00, 'https://example.com/arroz.jpg', 'Bogotá', 200, '1001', 4),
-('Pollo campesino', 'Pollo fresco de granja', 15000.00, 'https://example.com/pollo.jpg', 'Medellín', 30, '1002', 5);
+('Manzanas', 'Manzanas rojas dulces', 3000.00, 'https://example.com/manzanas.jpg', 'Bogotá', 53450, '1001', 1),
+('Lechuga', 'Lechuga fresca y orgánica', 1500.00, 'https://example.com/lechuga.jpg', 'Medellín', 100435, '1002', 2),
+('Queso campesino', 'Queso fresco artesanal', 12000.00, 'https://example.com/queso.jpg', 'Cali', 23450, '1003', 3),
+('Arroz', 'Arroz blanco premium', 2500.00, 'https://example.com/arroz.jpg', 'Bogotá', 20780, '1001', 4),
+('Pollo campesino', 'Pollo fresco de granja', 15000.00, 'https://example.com/pollo.jpg', 'Medellín', 300000, '1002', 5);
 
 
 INSERT INTO venta (nombre_completo, correo, direccion_envio, metodo_pago, telefono, documento, tipo_documento, total_pagar, nota)
