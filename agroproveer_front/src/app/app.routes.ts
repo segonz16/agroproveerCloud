@@ -1,0 +1,33 @@
+import { Routes } from '@angular/router';
+import { RegisterComponent } from './authentication/register/register.component';
+import { LoginComponent } from './authentication/login/login.component';
+import { HomeComponent } from './basic/home/home.component';
+import { AboutComponent } from './basic/about/about.component';
+import { ShoppingcartComponent } from './basic/shoppingcart/shoppingcart.component';
+import { CheckoutComponent } from './basic/checkout/checkout.component';
+import { ProductosComponent } from './basic/productos/productos.component';
+import { AdminproductosComponent } from './basic/adminproductos/adminproductos.component';
+import { CategoriasComponent } from './basic/categorias/categorias.component';
+import { LogoutComponent } from './authentication/logout/logout.component';
+import { PerfilComponent } from './basic/perfil/perfil.component';
+import { AgroproveerRoutes } from './utils/enum/routes';
+import { CheckoutsummaryComponent } from './basic/checkoutsummary/checkoutsummary.component';
+import { MyproductsComponent } from './basic/myproducts/myproducts.component';
+import { BuscarOrdenComponent } from './basic/buscar-orden/buscar-orden.component';
+export const routes: Routes = [
+    { path: AgroproveerRoutes.REGISTER, component: RegisterComponent },
+    { path: AgroproveerRoutes.LOGIN, component: LoginComponent },
+    { path: AgroproveerRoutes.HOME, component: HomeComponent },
+    { path: AgroproveerRoutes.ABOUT, component: AboutComponent },
+    { path: AgroproveerRoutes.CART, component: ShoppingcartComponent },
+    { path: AgroproveerRoutes.CHECKOUT, component: CheckoutComponent },
+    { path: AgroproveerRoutes.MERCADO, component: ProductosComponent },
+    { path: AgroproveerRoutes.ADMINPRODUCTOS, component: AdminproductosComponent },
+    { path: AgroproveerRoutes.ADMINCATEGORIAS, component: CategoriasComponent },
+    { path: AgroproveerRoutes.LOGOUT, component: LogoutComponent }, 
+    { path: AgroproveerRoutes.PERFIL, component: PerfilComponent }, 
+    { path: AgroproveerRoutes.CHECKOUT_SUCCESS, component: CheckoutsummaryComponent },
+    { path: AgroproveerRoutes.MYPRODUCTS, component: MyproductsComponent },
+    { path: AgroproveerRoutes.BUSCAR_ORDEN, component: BuscarOrdenComponent },
+    {   path: '**', redirectTo: AgroproveerRoutes.HOME } 
+];

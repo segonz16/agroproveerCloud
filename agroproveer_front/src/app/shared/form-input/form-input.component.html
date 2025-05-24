@@ -1,0 +1,26 @@
+<mat-form-field appearance="outline" class="w-100">
+  <mat-label>{{ label }}</mat-label>
+  <input matInput 
+    [type]="getInputType" 
+    [placeholder]="placeholder" 
+    [formControl]="control" 
+    [required]="mandatory" 
+  />
+  
+  @if(icon){
+    <mat-icon matPrefix>{{ icon }}</mat-icon>
+  }
+
+ 
+
+  @if(hint){
+    <mat-hint>{{ hint }}</mat-hint>
+  }
+  <!-- Si errorMessage está definido y el campo NO tiene errores propios -->
+  @if(showCustomError){
+    <mat-error>
+      {{ errorMessage }}
+    </mat-error>
+  }
+  
+</mat-form-field>
