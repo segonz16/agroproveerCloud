@@ -4,4 +4,5 @@ El sistema debe permitir el registro de usuarios con diferentes roles (vendedore
 
 **Arquitectura**
 
-![image](https://github.com/user-attachments/assets/ac3033be-75ef-45d4-bdac-8b365230c65b)
+![image](https://github.com/user-attachments/assets/e244e78d-79d5-471b-9bbe-b30c6de5d218)
+
